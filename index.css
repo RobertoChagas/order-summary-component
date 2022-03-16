@@ -27,6 +27,7 @@ body {
 #card-principal .top-image{
 
     width: 100%;
+    border-radius: 50px 50px 0 0;
 }
 
 #card-principal div h1{
@@ -45,3 +46,9 @@ body {
     padding-bottom: 20px;
 }
 
+
+
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+}
