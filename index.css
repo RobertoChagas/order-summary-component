@@ -6,6 +6,7 @@ body {
     font-family: "Red Hat Display";
     background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
+    box-sizing: border-box;
     
 }
 
@@ -15,23 +16,31 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 500px;
+    width:450px;
+    max-width: 85%;
+    
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 10%;
     margin-bottom: 100px;
     border: 1px solid black;
     border-radius: 50px;
-    z-index: 2;
+    overflow: hidden;
+
 }
 
 #card-principal .top-image{
 
     width: 100%;
-    border-radius: 50px 50px 0 0;
+
 }
 
 #card-principal div h1{
     margin-top: 50px;
+}
+
+p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
 }
 
 #card-principal div p {
@@ -41,11 +50,69 @@ body {
 
 #plan {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding-bottom: 20px;
+    width: 80%;
+    height: 90px;
+    margin: 10px 0 30px 0;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 16px;
 }
 
+.plan-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.price div h4 {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.button-proceed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: rgb(35, 35, 218);
+    text-align: center;
+    height: 45px;
+    border-radius: 8px;
+    margin-bottom: 5%;
+
+}
+
+.button-proceed a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+}
+
+.button-cancel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    height: 45px;
+    border-radius: 8px;
+    margin-bottom: 5%;
+
+}
+
+.button-cancel a {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
 
 
 footer {
